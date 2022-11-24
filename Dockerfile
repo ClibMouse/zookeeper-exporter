@@ -1,4 +1,4 @@
-FROM        golang:1.14-alpine as builder
+FROM        golang:1.19-alpine as builder
 WORKDIR     /usr/src/zookeeper-exporter
 COPY        . /usr/src/zookeeper-exporter
 RUN         go build -v 
